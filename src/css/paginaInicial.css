@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5e5d8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: #f8f5f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+.logo-section img {
+    width: 400px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.menu button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    background-color: #f0eae0;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.menu button:hover {
+    background-color: #e0d8c8;
+}
+
+.social-media {
+    margin-top: 15px;
+}
+
+.social-media img {
+    width: 30px;
+    margin: 0 10px;
+}
