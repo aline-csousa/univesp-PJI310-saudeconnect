@@ -4,7 +4,7 @@ CREATE TABLE sci_enderecos(
   rua varchar(150) DEFAULT NULL,
   num char(5) DEFAULT NULL,
   bairro varchar(150) DEFAULT NULL,
-  geocode varchar(50) DEFAULT NULL,
+  complemento varchar(150) DEFAULT NULL,
   zona ENUM('urbana','rural') NOT NULL DEFAULT 'urbana',
   moradia ENUM('casa','apartamento','condominio','sitio','barraco','quartel','abrigo') DEFAULT NULL,
   condicao ENUM('proprio','financiado','alugado','arrendado','cedido','ocupacao','desabrigado') DEFAULT NULL,
