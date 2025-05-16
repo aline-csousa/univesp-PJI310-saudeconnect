@@ -20,13 +20,20 @@ public class AgenteController {
     private final AgenteMapper agenteMapper;
 
     @PostMapping
-    public ResponseEntity<Void> cadastrar(@RequestBody AgenteDto agenteDto) {
-        agenteService.cadastrarAgente(agenteMapper.toEntity(agenteDto));
+    public ResponseEntity<Void> cadastrar(@RequestBody AgenteDto agente) {
+        agenteService.cadastrarAgente(agenteMapper.toEntity(agente));
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
     @GetMapping
     public ResponseEntity<List<Agente>> listar() {
         return ResponseEntity.ok(agenteService.listarTodos());
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Agente> getById(@PathVariable String id) {
+        return agenteService.buscarPorId(id)
+                .map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
     }
 }

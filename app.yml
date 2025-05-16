@@ -1,0 +1,11 @@
+runtime: java21
+
+instance_class: F1
+
+vpc_access_connector:
+  name: projects/grand-store-457814-t3/locations/southamerica-east1/connectors/vpc-connector
+
+env_variables:
+  DB_URL: "jdbc:mysql://10.12.96.3:3306/saude_db"
+  DB_USERNAME: "faculdade"
+  DB_PASSWORD: "faculdade1234"

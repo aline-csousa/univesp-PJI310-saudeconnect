@@ -29,7 +29,7 @@ public class PacienteRepositoryImpl implements PacienteRepository  {
     }
 
     @Override
-    public List<Paciente> listarTodos() {
+    public List<Paciente> listar() {
         return jpaRepository.findAll();
     }
 

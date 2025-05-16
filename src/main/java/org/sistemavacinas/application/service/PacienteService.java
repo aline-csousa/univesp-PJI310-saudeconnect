@@ -22,7 +22,7 @@ public class PacienteService {
     }
 
     public List<Paciente> listarTodos() {
-        return pacienteRepository.listarTodos();
+        return pacienteRepository.listar();
     }
 
     public void deletarPaciente(String id) {

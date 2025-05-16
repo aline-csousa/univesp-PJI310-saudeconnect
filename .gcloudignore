@@ -1,0 +1,4 @@
+target/test-classes
+**/node_modules/
+**/*.log
+.git/

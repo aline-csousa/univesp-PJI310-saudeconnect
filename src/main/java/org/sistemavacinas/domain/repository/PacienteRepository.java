@@ -11,7 +11,7 @@ public interface PacienteRepository {
 
     Optional<Paciente> buscarPorId(String id);
 
-    List<Paciente> listarTodos();
+    List<Paciente> listar();
 
     void deletar(String id);
 }
